@@ -295,7 +295,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 7, z: 0}
+  m_LocalPosition: {x: 0, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 9177764582761083621}
-  smoothTime: 0.25
+  smoothTime: 0.15
 --- !u!1 &1821089254
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,7 +363,7 @@ MonoBehaviour:
   size: {x: 5, y: 5}
   startPos: 0
   room: {fileID: 7957597901453458036, guid: 3ea650fcf1caed24381d86bb6139e0d5, type: 3}
-  offset: {x: 6, y: 6}
+  offset: {x: 12, y: 12}
 --- !u!1001 &9177764582761083614
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -442,6 +442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a60c4ab8cd8f7348931b9d4caf1ff48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smoothTime: 0.05
   Speed: 10
 --- !u!143 &9177764582761083619
 CharacterController:
