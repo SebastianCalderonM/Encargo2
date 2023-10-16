@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6913863201698588229}
   - component: {fileID: -8682013924714299104}
   - component: {fileID: -8998229890212392609}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,6 +111,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1b55c3069f6c1441b793d3a9baeec59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  capaDelJugador:
+    serializedVersion: 2
+    m_Bits: 8
+  jugador: {fileID: 0}
+  velocidad: 5
+  estarALerta: 0
 --- !u!54 &-8998229890212392609
 Rigidbody:
   m_ObjectHideFlags: 0
