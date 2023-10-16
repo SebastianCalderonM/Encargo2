@@ -13,11 +13,12 @@ public class Character : MonoBehaviour
     public float Speed = 5f;
 
     public Image barraVida;
-    private float vida = 10;
+    private float vida = 20;
 
     public bool enFinal = false;
 
     public GameObject victoria;
+    public GameObject reintento;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +38,7 @@ public class Character : MonoBehaviour
         {
             Debug.Log("Ganaste");
             victoria.SetActive(true);
+            Time.timeScale = 0.0f;
         }
     }
 
@@ -54,8 +56,14 @@ public class Character : MonoBehaviour
         
         characterController.Move(move*Time.deltaTime*Speed);
 
-        vida = Mathf.Clamp(vida,0,10); // no deja que la vida exeda estos límites
-        barraVida.fillAmount = vida / 10;
+        vida = Mathf.Clamp(vida,0,20); // no deja que la vida exeda estos límites
+        barraVida.fillAmount = vida / 20;
+
+        if (vida <= 0)
+        {
+            reintento.SetActive(true);
+            Time.timeScale = 0.0f;
+        }
 
     }     
 }
