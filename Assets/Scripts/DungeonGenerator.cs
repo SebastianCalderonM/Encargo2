@@ -143,9 +143,14 @@ public class DungeonGenerator : MonoBehaviour
                     {
                         int cantidadEnemigosHab = Random.Range(0,4);
 
+                        if (cantidadEnemigosHab == 0)
+                        {
+                            cantidadEnemigosHab = Random.Range(0,2);
+                        }
+
                         for (int n = 0 ; n < cantidadEnemigosHab ; n++)
                         {
-                            SeleccionarEnemigo(currentCell);
+                            SeleccionarEnemigo(currentCell, newRoom);
                         }
                     }
                     
@@ -192,7 +197,7 @@ public class DungeonGenerator : MonoBehaviour
 
   
     
-    public void SeleccionarEnemigo(DungeonGenerator.Cell celda)
+    public void SeleccionarEnemigo(DungeonGenerator.Cell celda, RoomBehaviour room)
     {
         GameObject enemy;
         int aux = Random.Range(0,3);
@@ -201,7 +206,6 @@ public class DungeonGenerator : MonoBehaviour
         if (aux == 0 )
         {
             enemy = Instantiate(cubo, posRand, Quaternion.identity, transform);
-            enemy.transform.parent = parent;
         }
         else if (aux == 1)
         {
@@ -211,6 +215,7 @@ public class DungeonGenerator : MonoBehaviour
         {
             enemy = Instantiate(cilindro, posRand, Quaternion.identity, transform);
         }
-
+        
+        enemy.transform.parent = room.transform;
     }
 }

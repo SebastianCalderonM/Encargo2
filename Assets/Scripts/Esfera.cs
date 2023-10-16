@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Esfera : MonoBehaviour
 {
-    private float rangoVision = 5;
+    private float rangoVision = 4;
     public LayerMask capaDelJugador;
 
     private Transform jugador;
