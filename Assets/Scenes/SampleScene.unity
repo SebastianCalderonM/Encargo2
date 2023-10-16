@@ -364,6 +364,10 @@ MonoBehaviour:
   startPos: 0
   room: {fileID: 7957597901453458036, guid: 3ea650fcf1caed24381d86bb6139e0d5, type: 3}
   offset: {x: 12, y: 12}
+  cubo: {fileID: 3957422541295777857, guid: c471b4bb655a5304dbcd19c767369140, type: 3}
+  cilindro: {fileID: 5196705087743717684, guid: eef9dfe089bd87f499821fa36befc5d2, type: 3}
+  esfera: {fileID: 1187851006694945853, guid: 6cc847d03ba8f1f4f9890cad95ded18f, type: 3}
+  final: {fileID: 1757747921802423006, guid: 5faeeb6eb82d4694183838835c8c5e5b, type: 3}
 --- !u!1001 &9177764582761083614
 PrefabInstance:
   m_ObjectHideFlags: 0
