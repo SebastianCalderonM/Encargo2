@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Character : MonoBehaviour
 {
@@ -10,10 +11,33 @@ public class Character : MonoBehaviour
     [SerializeField] private float smoothTime = 0.05f;
     private float _currentVelocity;
     public float Speed = 5f;
+
+    public Image barraVida;
+    public float vida = 10;
+
+    public bool enFinal = false;
+
+    public GameObject victoria;
+
     // Start is called before the first frame update
     void Start()
     {
         characterController = GetComponent<CharacterController>();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Enemigo"))
+        {
+            Debug.Log("Daño recibido");
+            vida = vida - 1 ;
+        }
+
+        if (other.CompareTag("Finish"))
+        {
+            Debug.Log("Ganaste");
+            victoria.SetActive(true);
+        }
     }
 
     // Update is called once per frame
@@ -29,5 +53,19 @@ public class Character : MonoBehaviour
         transform.rotation = Quaternion.Euler(0.0f, angle, 0.0f);
         
         characterController.Move(move*Time.deltaTime*Speed);
+
+        vida = Mathf.Clamp(vida,0,5); // no deja que la vida exeda estos límites
+        barraVida.fillAmount = vida / 10;
+
+        /*
+        if ( vida == 0)
+        { 
+        
+        }
+
+        if ()
+        */
     }
+
+    
 }

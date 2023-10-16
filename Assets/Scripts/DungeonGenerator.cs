@@ -21,6 +21,8 @@ public class DungeonGenerator : MonoBehaviour
     public GameObject esfera;
     public GameObject final;
 
+    Transform parent;
+
     List<Cell> board;
     
     // Start is called before the first frame update
@@ -188,6 +190,8 @@ public class DungeonGenerator : MonoBehaviour
         return neighbors;
     }
 
+  
+    
     public void SeleccionarEnemigo(DungeonGenerator.Cell celda)
     {
         GameObject enemy;
@@ -197,6 +201,7 @@ public class DungeonGenerator : MonoBehaviour
         if (aux == 0 )
         {
             enemy = Instantiate(cubo, posRand, Quaternion.identity, transform);
+            enemy.transform.parent = parent;
         }
         else if (aux == 1)
         {

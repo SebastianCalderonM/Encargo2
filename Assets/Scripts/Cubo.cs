@@ -7,8 +7,8 @@ public class Cubo : MonoBehaviour
     private float rangoVision = 5;
     public LayerMask capaDelJugador;
 
-    public Transform jugador;
-    public float velocidad;
+    private Transform jugador;
+    private float velocidad;
 
     public bool estarALerta = false; //cuando el jugador entra es verdadero
 
@@ -16,6 +16,7 @@ public class Cubo : MonoBehaviour
     void Start()
     {
         jugador = GameObject.Find("Character").transform;
+        velocidad= Random.Range (4,7);
     }
 
     // Update is called once per frame

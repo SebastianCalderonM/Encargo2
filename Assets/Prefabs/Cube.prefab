@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: -8682013924714299104}
   - component: {fileID: -8998229890212392609}
   - component: {fileID: 9168840626216927200}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,7 +115,6 @@ MonoBehaviour:
   capaDelJugador:
     serializedVersion: 2
     m_Bits: 8
-  jugador: {fileID: 0}
   velocidad: 5
   estarALerta: 0
 --- !u!54 &-8998229890212392609

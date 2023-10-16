@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -6950823727670224829}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,7 +94,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1187851006694945853}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -127,3 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b99bc0d376b0e49bcf566a56e7d8d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  capaDelJugador:
+    serializedVersion: 2
+    m_Bits: 8
+  estarALerta: 0
