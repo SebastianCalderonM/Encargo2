@@ -425,15 +425,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6284855151998823962, guid: 01144602ee1339d47a6d72fe886f6f3d, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7036804973737782855, guid: 01144602ee1339d47a6d72fe886f6f3d, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7278906309473242776, guid: 01144602ee1339d47a6d72fe886f6f3d, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7422963648209992043, guid: 01144602ee1339d47a6d72fe886f6f3d, type: 3}
       propertyPath: m_UseGravity
