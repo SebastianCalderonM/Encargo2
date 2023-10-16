@@ -423,6 +423,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
+    - target: {fileID: 7422963648209992043, guid: 01144602ee1339d47a6d72fe886f6f3d, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422963648209992043, guid: 01144602ee1339d47a6d72fe886f6f3d, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01144602ee1339d47a6d72fe886f6f3d, type: 3}
 --- !u!4 &9177764582761083621 stripped
