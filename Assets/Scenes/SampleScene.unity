@@ -983,6 +983,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9177764582761083618, guid: 01144602ee1339d47a6d72fe886f6f3d, type: 3}
+      propertyPath: vida
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9177764582761083618, guid: 01144602ee1339d47a6d72fe886f6f3d, type: 3}
       propertyPath: victoria
       value: 
       objectReference: {fileID: 212841466}

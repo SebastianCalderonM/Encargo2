@@ -13,7 +13,7 @@ public class Character : MonoBehaviour
     public float Speed = 5f;
 
     public Image barraVida;
-    public float vida = 10;
+    private float vida = 10;
 
     public bool enFinal = false;
 
@@ -54,18 +54,8 @@ public class Character : MonoBehaviour
         
         characterController.Move(move*Time.deltaTime*Speed);
 
-        vida = Mathf.Clamp(vida,0,5); // no deja que la vida exeda estos límites
+        vida = Mathf.Clamp(vida,0,10); // no deja que la vida exeda estos límites
         barraVida.fillAmount = vida / 10;
 
-        /*
-        if ( vida == 0)
-        { 
-        
-        }
-
-        if ()
-        */
-    }
-
-    
+    }     
 }

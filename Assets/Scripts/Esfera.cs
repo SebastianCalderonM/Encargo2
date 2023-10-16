@@ -29,7 +29,7 @@ public class Esfera : MonoBehaviour
         //transform.position = Vector3.MoveTowards(this.transform.position, targetObj.position, 10 * Time.deltaTime);
         estarALerta = Physics.CheckSphere(transform.position, rangoVision, capaDelJugador);
 
-        if (estarALerta   ) //InRoom(jugador.position, )
+        if (estarALerta && InRoom(jugador.position, transform.parent.position))
         {
             transform.LookAt(new Vector3(jugador.position.x,transform.position.y ,jugador.position.z));
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(jugador.position.x,transform.position.y ,jugador.position.z), velocidad * Time.deltaTime);
@@ -38,7 +38,7 @@ public class Esfera : MonoBehaviour
 
     private bool InRoom(Vector3 pos, Vector3 centro)
     {
-        if (pos.x < centro.x - 5.5f || pos.x > centro.x + 5.5f || pos.z < centro.z - 5.5f || pos.z > centro.z + 5.5f)
+        if (pos.x < centro.x - 5.7f || pos.x > centro.x + 5.7f || pos.z < centro.z - 5.7f || pos.z > centro.z + 5.7f)
         {
             return false;
         }
