@@ -3,12 +3,14 @@ using UnityEngine;
 public class SmoothCameraFollow : MonoBehaviour
 {
     private Vector3 _offset;
-    [SerializeField] private Transform target;
+    // [SerializeField] private Transform target;
+    private Transform target;
     [SerializeField] private float smoothTime;
     private Vector3 _currentVelocity = Vector3.zero;
 
     private void Awake()
     {
+        target = GameObject.Find("Character").transform;
         _offset = transform.position - target.position;
     }
 

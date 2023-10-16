@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1302703450862735312
 Transform:
   m_ObjectHideFlags: 0
@@ -100,7 +100,9 @@ MonoBehaviour:
   smoothTime: 0.05
   Speed: 10
   barraVida: {fileID: 0}
-  vida: 5
+  enFinal: 0
+  victoria: {fileID: 0}
+  reintento: {fileID: 0}
 --- !u!1 &7036804973737782855
 GameObject:
   m_ObjectHideFlags: 0

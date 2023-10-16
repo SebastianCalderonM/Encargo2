@@ -158,9 +158,9 @@ public class DungeonGenerator : MonoBehaviour
                 }
             }
         }
-        Vector3 paja = new Vector3(board[board.Count-1].centroHabitacion.x, 0.011f, board[board.Count-1].centroHabitacion.z);
+        Vector3 pFin = new Vector3(board[board.Count-1].centroHabitacion.x, 0.011f, board[board.Count-1].centroHabitacion.z);
 
-        final = Instantiate(final, paja , Quaternion.identity, transform);
+        final = Instantiate(final, pFin , Quaternion.identity, transform);
     }
 
     List<int> CheckNeighbors(int cell)
